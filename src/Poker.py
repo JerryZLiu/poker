@@ -22,13 +22,18 @@ class Poker:
 	def initialize(self):
 		# generate players
 
-
+	# Takes in id and returns the player object with that id
 	def get_player_from_id(self, id_):
 
-
+	'''
+	Calculate which players have bankrupted and removes them from the list of players
+	'''
 	def remove_bankrupt_players(self):
 
-
+	'''
+	Calls the initialize function to set up the game and keeps running rounds until there's only one player left.
+	Then we print out the winner!
+	'''
 	def play(self):
 
 
@@ -97,22 +102,24 @@ class Round:
 
 
 	'''
-	Check if there is a winner (i.e., just one player who has not folded)
+	Check where or not there is a winner (i.e., just one player who has not folded)
 	'''
-	def winner(self):
+	def winner(self): 
 
 
 	'''
-	Score players' hands and reward winner.
+	Score players' hands and returns the winner.
 	'''
 	def score_player_hands(self):
 
-
+    '''
+    Prints out winner, gives money to winner and then prints out everyone's balance after the round ends.
+    '''
 	def give_out_winnings(self, winner):
 
 
 	'''
-	Play poker.
+    Runs through a whole round of poker play, blinds, betting, scoring hands and distributing winnings.
 	'''
 	def play(self):
 
